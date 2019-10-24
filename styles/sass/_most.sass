@@ -12,9 +12,8 @@ body
   margin: auto
   position: relative
   line-height: 1.4
-  font-weight: 400
-  font-family: 'Montserrat', sans-serif
-  overflow-x: hidden
+  font-weight: 300
+  font-family: 'Oswald', sans-serif
   color: #000
   box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.18)
   input, textarea
@@ -38,23 +37,26 @@ body
 
 .content
   p
-    padding: 0 .2rem
-
+    padding: 0 .25rem
+      right: 0.2rem
+    font-size: 0.25rem
+    font-weight: 300
+    line-height: 0.37rem
+    letter-spacing: 0.03em
+    &:last-child
+      margin-bottom: 0
+    b
+      font-weight: 500
 h2
-  margin: 0
-  display: block
-  width: 4.46rem
-  padding: .1rem 0
-  font-size: 0.25rem
-  line-height: 0.3rem
-  font-weight: bold
+  font-size: 0.28rem
+  line-height: 0.43rem
+  font-weight: 300
   text-transform: uppercase
-  text-align: center
-  margin: auto
-    bottom: 0.3rem
-  background: $accent
-  border-radius: 50px
-  color: #fff
+  color: $red
+  padding: .3rem .25rem
+  margin: 0
+  b
+    font-weight: 500
 .t-center
   text-align: center
 .t-white
@@ -62,8 +64,8 @@ h2
 
 .btn
   display: block
-  width: 3.3rem
-  height: 0.88rem
+  width: 3.12rem
+  height: 0.97rem
   margin: auto
   background-image: url(../../img/button.png)
   background-size: cover
@@ -71,7 +73,7 @@ h2
   animation: btn 3s linear infinite
   font-weight: bold
   font-size: 0.3rem
-  color: #000
+  color: #fff
   border: none
   background-color: transparent
   display: flex
@@ -79,6 +81,7 @@ h2
   justify-content: center
   text-decoration: none
   span
+    padding-bottom: 0.2rem
     text-align: center
 .border__top
   width: 4.8rem
