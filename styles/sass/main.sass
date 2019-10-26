@@ -2,7 +2,77 @@
 @import "most"
 @import "offer"
 @import "reviews"
+@import "anim"
 
+.main
+  background-image: url(../../img/main-bg.jpg)
+  background-size: cover
+  padding: 0.2rem
+  position: relative
+.main__logo
+  img
+    width: 100%
+    max-width: 2.1rem
+.main-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: relative
+  margin-bottom: 0.2rem
+.main-header__heading
+  p
+    margin: 0
+    line-height: 1.2
+    font-size: 0.25rem
+    color: #881214
+    margin-bottom: 0.1rem
+.main-price
+  font-family: 'Pacifico', cursive
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 1.3rem
+  height: 0.96rem
+  background-image: url(../../img/price.png)
+  background-size: cover
+  padding-bottom: 0.3rem
+  color: #BC9B9B
+  font-size: 0.26rem
+  line-height: 0.26rem
+  box-sizing: border-box
+  margin-left: 0.45rem
+  s
+    padding-right: 0.2rem
+  span
+    font-size: 0.44rem
+    color: #000
+    font-weight: bold
+
+.main__product
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  margin-top: -0.75rem
+  img
+    width: 100%
+    max-width: 3.8rem
+  &.top
+    margin-bottom: 0.2rem
+
+.main__item
+  display: flex
+  align-items: center
+  height: 0.72rem
+  background: #fff
+  border-radius: 50px
+  margin-bottom: 0.3rem
+  padding-left: 0.04rem
+  font-size: 0.2rem
+  box-shadow: 0px 20px 13px 0px rgba(0, 0, 0, 0.1)
+  img
+    width: .67rem
+    margin-right: 0.2rem
 .header
   background-image: url(../../img/main__bg.jpg)
   background-size: cover
@@ -106,7 +176,7 @@
   padding-top: 0.2rem
 .sect5
   padding-top: 0.2rem
-
+  padding-bottom: 0.6rem
 .sect5__item
   width: 4.3rem
   height: .72rem
@@ -119,6 +189,8 @@
   margin-bottom: 0.3rem
   position: relative
   box-shadow: 0px 20px 20px 2px #8f181661
+  &:last-child
+    margin-bottom: 0
   img
     width: 0.67rem
     margin-right: 0.2rem
@@ -126,3 +198,37 @@
     margin: 0
     font-size: 0.2rem
     line-height: 0.28rem
+
+.main__form
+  display: flex
+  flex-direction: column
+  padding: .3rem .23rem
+    bottom: .55rem
+  background: rgba(255, 255, 255, 0.7)
+  border-radius: 20px
+  margin-top: 0.2rem
+  h3
+    margin: 0
+    text-align: center
+    font-size: 0.26rem
+    color: #881214
+    text-transform: uppercase
+  input
+    border: 1.14208px solid #DBDBDB
+    border-radius: 40px
+    background: #fff
+    height: 0.82rem
+    padding-left: 0.3rem
+    box-sizing: border-box
+    margin: .3rem 0
+    font-size: 0.21rem
+  input[name="phone"]
+    margin-top: 0
+.offer__footer
+  text-align: center
+  margin-top: -0.4rem
+  font-size: 0.16rem
+  letter-spacing: 0.1em
+  .img-wrap
+    max-width: 3.1rem
+    margin: auto

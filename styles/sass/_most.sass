@@ -65,8 +65,9 @@ h2
 .btn
   display: block
   width: 3.12rem
-  height: 0.97rem
+  height: 1.4rem
   margin: auto
+  cursor: pointer
   background-image: url(../../img/button.png)
   background-size: cover
   text-transform: uppercase
@@ -80,6 +81,10 @@ h2
   align-items: center
   justify-content: center
   text-decoration: none
+  &.form
+    background-image: url(../../img/button_form.png)
+    span
+      padding-bottom: 0.4rem
   span
     padding-bottom: 0.2rem
     text-align: center
@@ -95,6 +100,23 @@ h2
   bottom: -0.28rem
   left: 0
   right: 0
+
+.pulse__btn
+  position: fixed
+  right: 0.1rem
+  display: inline-block
+  bottom: 0.1rem
+  z-index: 10
+  box-shadow: 0 0 0 rgba(11, 138, 44, 0.4)
+  width: 0.7rem
+  height: 0.7rem
+  border-radius: 50%
+  animation: pulse 2s infinite
+  transition: all .9s ease
+  &.show
+    right: -100%
+  img
+    width: 100%
 // animation
 @keyframes btn
   0%
